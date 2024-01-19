@@ -30,6 +30,7 @@ gem 'sassc', '~> 2.0'
 
 gem "activeadmin"
 gem "devise"
+gem 'bootstrap', '~> 5.1.3'
 
 
 # Use Redis adapter to run Action Cable in production

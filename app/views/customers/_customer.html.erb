@@ -1,0 +1,17 @@
+<!--
+    Name: Jezreelson Sobremonte
+    Course: WEBD-3008 (248294)
+    Instructor: Jonathan Boisvert
+    Challenge 6
+
+    Partial for Customer information
+-->
+
+<div class="customer-card">
+  <%= image_tag(customer.image, class: "customer-image") if customer.image.attached? %>
+  <h3 class="h5"><%= customer.full_name %></h3>
+  <p class="text-muted"><%= customer.phone_number %></p>
+  <p><%= customer.email_address %></p>
+  <p class="small text-secondary"><%= customer.notes %></p>
+</div>
+
