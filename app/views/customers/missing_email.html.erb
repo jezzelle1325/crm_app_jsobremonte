@@ -10,6 +10,9 @@
 
 -->
 
+<%= link_to 'All Customers', root_path %>
+<%= link_to 'Alphabetized Customers', customers_alphabetized_path %>
+
 <% @customers.each do |customer| %>
   <%= render 'customer', customer: customer %>
 <% end %>
