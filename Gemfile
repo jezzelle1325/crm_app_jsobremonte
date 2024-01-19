@@ -28,7 +28,7 @@ gem "jbuilder"
 
 gem 'sassc', '~> 2.0'
 
-gem "activeadmin"
+gem 'activeadmin'
 gem "devise"
 gem 'bootstrap', '~> 5.1.3'
 
