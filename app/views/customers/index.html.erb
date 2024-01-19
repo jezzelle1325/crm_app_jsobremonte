@@ -19,10 +19,6 @@
 
 <% @customers.each do |customer| %>
   <div class="customer">
-    <% if customer.image.attached? %>
-      <%= image_tag customer.image %>
-    <% end %>
     <%= render 'customer', customer: customer %>
   </div>
-
 <% end %>

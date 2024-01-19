@@ -15,10 +15,9 @@ ActiveAdmin.register Customer do
 
   index do
     selectable_column
-    id_column
-    column :full_name
-    column :phone_number
-    column :email_address
+    column :full_name, sortable: :full_name
+    column :email_address, sortable: :email_address
+    column :phone_number, sortable: :phone_number
     column :notes
     column :image do |customer|
       if customer.image.attached?

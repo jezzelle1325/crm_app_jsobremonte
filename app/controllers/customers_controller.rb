@@ -28,5 +28,4 @@ class CustomersController < ApplicationController
     params.require(:customer).permit(:full_name, :phone_number, :email_address, :notes, :image)
   end
 
-
 end
