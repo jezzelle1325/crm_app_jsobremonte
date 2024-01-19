@@ -1,0 +1,17 @@
+<!--
+    Name: Jezreelson Sobremonte
+    Course: WEBD-3008 (248294)
+    Instructor: Jonathan Boisvert
+    Challenge 6
+
+    Show Views (w/ Images)
+-->
+
+<h1><%= @customer.full_name %></h1>
+<% if @customer.image.attached? %>
+  <%= image_tag @customer.image %>
+  <%= render 'customer', customer: customer %>
+<% end %>
+
+
+

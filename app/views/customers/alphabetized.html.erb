@@ -8,9 +8,13 @@
 
    Alphabetized Customer Views
 -->
-<%= link_to 'All Customers', root_path %>
-<%= link_to 'Customers Missing Email', customers_missing_email_path %>
 
+<div class="navigation-links">
+
+  <%= link_to 'All Customers', root_path %>
+  <%= link_to 'Customers Missing Email', customers_missing_email_path %>
+
+</div>
 
 <% @customers.each do |customer| %>
   <%= render 'customer', customer: customer %>

@@ -1,0 +1,14 @@
+<!--
+    Name: Jezreelson Sobremonte
+    Course: WEBD-3008 (248294)
+    Instructor: Jonathan Boisvert
+    Challenge 6
+
+    Form Views
+-->
+
+<%= form_with model: @customer, local: true do |form| %>
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+  <%= form.submit %>
+<% end %>
